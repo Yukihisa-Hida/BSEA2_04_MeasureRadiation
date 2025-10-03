@@ -34,7 +34,50 @@ GM計数管を用いて, 放射性原子の放射性崩壊の法則と物質に�
 放射性原子が崩壊する確率は, その原子核の種類に依存する.
 
 ある核種$\mathrm{A}$が時刻$t$において$\mathcal{N}$個あるとする.
-微小時間$\mathrm{d}t$の間に崩壊を起こして他の核種$\mathrm{B}$に変化する数を$\mathrm{d}N$とすると, 単位時間あたりの崩壊数$\mathrm{d}\mathcal{N}/\mathrm{d}t$は$\mathcal{N}$に比例する.
+微小時間$\mathrm{d}t$の間に崩壊を起こして他の核種$\mathrm{B}$に変化する数を$\mathrm{d}N$とすると, 単位時間あたりの崩壊数$\mathrm{d}\mathcal{N}/\mathrm{d}t$は$\mathcal{N}$に比例し, 比例定数(崩壊定数)を$\lambda$とすると, 次のように表される.
+\begin{equation}
+  \frac{\mathrm{d}\mathcal{N}}{\mathrm{d}t} = -\lambda \mathcal{N}
+\end{equation}
+
+時刻$t=0$における核種$\mathrm{A}$の数を$\mathcal{N}_0$とすると, 時刻$t$における核種$\mathrm{A}$の数は平均的に次のようになる.
+\begin{equation}
+  \mathcal{N}(t) = \mathcal{N}_0 e^{-\lambda t}
+\end{equation}
+
+この数が半分になる時間を半減期$\tau$といい, 次の関係が成り立つ.
+\begin{equation}
+  \tau = (\log_e 2)/\lambda
+  = 0.693/\lambda
+\end{equation}
+
+次に, $\lambda t$が$1$に比べて十分小さいとき, $e^{-\lambda t}$はテイラー展開により,
+\begin{equation}
+  e^{-\lambda t} \cong 1 - \lambda t
+\end{equation}
+と近似できる.
+したがって, 時刻$t$における核種$\mathrm{A}$の数は次のように表される.
+\begin{equation}
+  \mathcal{N}(t)=\mathcal{N}_0-\mathcal{N}_0\lambda t
+\end{equation}
+この式から, 放射性崩壊の数を時間$t$にわたって観測して得られる計数値$N$の平均値$\overline{N}$は
+\begin{equation}
+  \overline{N} = \mathcal{N}_0\lambda t
+\end{equation}
+と期待できる.
+
+そしてその計数値$N$の確率$P(N)$は, 次のポアソン分布に従う.
+\begin{equation}
+  P(N) = \frac{\overline{N}^N}{N!}e^{-\overline{N}}, \quad
+  \sum_{N=0}^{\infty} P(N) = 1
+\end{equation}
+また, 平均値$\overline{N}$が大きくなると, ポアソン分布は次のガウス分布(正規分布)に近づく.
+\begin{equation}
+  G(N) = \frac{1}{\sqrt{2\pi\overline{N}}} \exp \left\{-\frac{(N-\overline{N})^2}{2\overline{N}}\right\}
+\end{equation}
+
+\subsection{$\beta$線の吸収}
+
+
 
 \section{実験方法}
 
