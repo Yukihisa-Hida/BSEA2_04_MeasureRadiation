@@ -12,12 +12,15 @@
 \maketitle
 
 
+
 \section{実験の目的}
 
 GM計数管を用いて, 放射性原子の放射性崩壊の法則と物質による放射線の吸収について調べる.
 
 
+
 \section{実験の原理}
+
 
 \subsection{放射性原子の崩壊}
 
@@ -27,6 +30,7 @@ GM計数管を用いて, 放射性原子の放射性崩壊の法則と物質に�
 ある原子核が安定でない場合, その原子核は放射性崩壊を起こし, より安定な原子核に変化する.
 このとき, $\alpha$線, $\beta$線, $\gamma$線などの放射線が放出される.
 この現象が放射性原子の崩壊である.
+
 
 \subsection{放射性崩壊の計数値の分布}
 
@@ -75,7 +79,22 @@ GM計数管を用いて, 放射性原子の放射性崩壊の法則と物質に�
   G(N) = \frac{1}{\sqrt{2\pi\overline{N}}} \exp \left\{-\frac{(N-\overline{N})^2}{2\overline{N}}\right\}
 \end{equation}
 
+
 \subsection{$\beta$線の吸収}
+
+$\beta$線が物質中を通過するとき, 物質中の原子と相互作用してエネルギーを失い, 次第に減衰していく.
+このとき$\beta$線の電子$\mathcal{N}$個が物質を通過する間に吸収されて減衰する割合は, その物質の厚さ$\mathrm{d}x$に比例し, 比例定数(線吸収係数)を$\mu$とすると, 次のように表される.
+\begin{equation}
+  \frac{\mathrm{d}\mathcal{N}}{\mathrm{d}x} = -\mu \mathcal{N}
+\end{equation}
+物質に入射前における電子の数を$\mathcal{N}_0$とすると, 物質の厚さ$x$を通過した後に残っている電子の数は次のようになる.
+\begin{equation}
+  \mathcal{N}(x) = \mathcal{N}_0 e^{-\mu x}
+\end{equation}
+また, 物質を通過して出てくる電子数は一般に, 物質層の厚さ$x$の代わりに単位面積あたりの質量$\rho_s$($\rho_s=\rho x$, ただし$\rho$は密度)を, 線吸収係数$\mu$の代わりに質量吸収係数$\mu_m$($\mu_m=\mu/\rho$)を用いて次のように表される.
+\begin{equation}
+  \mathcal{N}(x) = \mathcal{N}_0 e^{-\mu_m \rho_s}
+\end{equation}
 
 
 
