@@ -482,15 +482,17 @@ $\mathrm{Al}$板で遮蔽した$1$分間の計数値$N'$は, 自然計数$N_0$�
 また, $\beta$線の計数値の平均値$\overline{N}_\mathrm{\beta}$とその標準偏差$\sigma_\beta$は次の式で求める.
 \begin{equation}
   \overline{N}_\mathrm{\beta} = \overline{N} - \overline{N'}
+  \label{eq:beta-passing}
 \end{equation}
 \begin{equation}
   \sigma_\beta = \sqrt{\frac{\overline{N} + \overline{N'}}{n}} \quad (今回はn = 5)
+  \label{eq:beta-passing-log10}
 \end{equation}
 
 これらを用いて, 平均値$\overline{N}_\beta$や標準偏差$\sigma_\beta$を計算し, 次の表\ref{tb:Cu-foil-count-distribution}に整理する.
 
 \begin{table}[H]
-  \caption{$\beta$線の吸収の実験データ\protect\linebreak 試料金属$\mathrm{Cu}$, $\beta$線源の位置$100\ \mathrm{mm}$, 金属板の位置$30\ \mathrm{mm}$, 測定回数$4$回}
+  \caption{$\beta$線の吸収の実験データ\protect\linebreak 試料金属$\mathrm{Cu}$, $\beta$線源の位置$100\ \mathrm{mm}$, 金属板の位置$30\ \mathrm{mm}$, 測定回数$5$回}
   \label{tb:Cu-foil-count-distribution}
   \small
   \hspace{-3.3cm}
@@ -521,6 +523,57 @@ $x=0$のときの計数値の平均値を$\overline{N}_{\beta 0}$とすると, �
 \end{equation}
 
 これらのデータから, 縦軸に$\log_{10}\overline{N}_\beta$を, 横軸に$\mathrm{Cu}$の厚さ$x_\mathrm{Cu}$をとってグラフを示す.
+
+
+\subsubsection{$\mathrm{Ti}$箔での$\beta$線の吸収}
+
+以下に, $\mathrm{Ti}$箔の厚さ$x_\mathrm{Ti}$を示す.
+
+\begin{table}[H]
+  \centering
+  \caption{$\mathrm{Ti}$箔の厚さ}
+  \label{tb:Ti-foil-thickness}
+  \begin{tabular}{cc}
+    \hline
+    回数 & 厚さ$x_\mathrm{Ti}/\mathrm{mm}$ \\
+    \hline
+    1 & 0.21 \\
+    2 & 0.23 \\
+    3 & 0.22 \\
+    4 & 0.22 \\
+    5 & 0.21 \\
+    \hline
+    平均 & 0.218 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+式(\ref{eq:beta-passing})や式(\ref{eq:beta-passing-log10})を用いて, 平均値$\overline{N}_\beta$や標準偏差$\sigma_\beta$を計算し, 次の表\ref{tb:Ti-foil-count-distribution}に整理する.
+
+\begin{table}[H]
+  \caption{$\beta$線の吸収の実験データ\protect\linebreak 試料金属$\mathrm{Ti}$, $\beta$線源の位置$100\ \mathrm{mm}$, 金属板の位置$30\ \mathrm{mm}$, 測定回数$5$回}
+  \label{tb:Ti-foil-count-distribution}
+  \small
+  \hspace{-3.3cm}
+  \begin{tabular}{ccccccccc}
+    \hline
+    枚数 & 厚さ$/\mathrm{mm}$ & $1$分間の計数値 & 平均値 & $\beta$線計数値 & 対数 & 標準偏差 & & \\
+    & & $N$ & $\overline{N}$ & $\overline{N}_\beta$ & $\log_{10} \overline{N}_\beta$ & $\sigma_\beta$ & $\log_{10} (\overline{N}_\beta - \sigma_\beta)$ & $\log_{10} (\overline{N}_\beta + \sigma_\beta)$ \\
+    \hline
+    0 & 0.000 & 170,173,187,166,181 & 175.4 & 99.75 & 1.998913 & 7.085901 & 1.966912 & 2.028717 \\
+    1 & 0.218 & 412,153,151,164,166 & 155.2 & 79.55 & 1.900640 & 6.794851 & 1.861864 & 1.936236 \\
+    2 & 0.436 & 123,109,106,123,129 & 118.0 & 42.35 & 1.626853 & 6.223343 & 1.557828 & 1.686398 \\
+    3 & 0.654 & 126,103,116,106,105 & 111.2 & 35.55 & 1.550839 & 6.113101 & 1.468892 & 1.619752 \\
+    4 & 0.872 & 106,109,87,90,101 & 98.6 & 22.95 & 1.360783 & 5.903389 & 1.231638 & 1.460197 \\
+    5 & 1.090 & 93,91,103,100,87 & 94.8 & 19.15 & 1.282169 & 5.838664 & 1.124222 & 1.397743 \\
+    6 & 1.308 & 95,83,93,94,77 & 88.4 & 12.75 & 1.105510 & 5.728001 & 0.846461 & 1.266655 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+これらのデータから, 縦軸に$\log_{10}\overline{N}_\beta$を, 横軸に$\mathrm{Ti}$の厚さ$x_\mathrm{Ti}$をとってグラフを示す.
+
+
 
 
 \section{考察}
