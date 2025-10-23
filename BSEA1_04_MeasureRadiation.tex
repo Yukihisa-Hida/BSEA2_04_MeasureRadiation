@@ -8,7 +8,7 @@
 
 \title{放射線の計測}
 \author{2511198 肥田幸久 \\ 共同実験者 \\ }
-\date{2025年10月10日作成}
+\date{2025年10月23日作成}
 
 \begin{document}
 \maketitle
@@ -129,7 +129,7 @@ $\beta$線源のみをGM計数管の下段に入れ, 計数時間を$1\ \mathrm{
 
 \subsection{$\beta$線の吸収の測定}
 
-本実験で使用する$\beta$線源は$\gamma$線も放出するため, 初めに, 厚さ約$1\ \mathrm{mm}$の$\mathrm{Al}$板で遮蔽することで, $\beta$線のみを計測した.
+本実験で使用する$\beta$線源は$\gamma$線も放出するため, 初めに, 厚さ約$1\ \mathrm{mm}$の$\mathrm{Al}$板で遮蔽することで, $\gamma$線のみを計測した.
 
 次に, $\beta$線の吸収を調べるため, $\mathrm{Cu}$および$\mathrm{Ti}$の薄板をそれぞれ$0$枚から$6$枚まで$1$枚ずつ増やすことで, 吸収板の厚さを変化させ測定した.
 
@@ -536,7 +536,7 @@ $x=0$のときの計数値の平均値を$\overline{N}_{\beta 0}$とすると, �
 % \end{figure}
 
 グラフの傾き$-\mu(\log_{10}e)=-14.63\ \mathrm{mm}^{-1}=-146.3\ \mathrm{cm}^{-1}$より, 線吸収計数$\mu=336.87\ \mathrm{cm}^{-1}$と求まる.
-また, $\mathrm{Cu}$の密度$\rho=8.96\ \mathrm{g}/\mathrm{cm}^3$より\cite{金属の密度}, 質量吸収計数$\mu_m=37.60\ \mathrm{cm}^2/\mathrm{g}$と求まる.
+また, $\mathrm{Cu}$の密度$\rho=8.96\ \mathrm{g}/\mathrm{cm}^3$\cite{金属の密度}より, 質量吸収計数$\mu_m=37.60\ \mathrm{cm}^2/\mathrm{g}$と求まる.
 
 
 \subsubsection{$\mathrm{Ti}$箔での$\beta$線の吸収}
@@ -596,7 +596,7 @@ $x=0$のときの計数値の平均値を$\overline{N}_{\beta 0}$とすると, �
 % \end{figure}
 
 グラフの傾き$-\mu(\log_{10}e)=-6.85\ \mathrm{mm}^{-1}=-68.5\ \mathrm{cm}^{-1}$より, 線吸収計数$\mu=157.73\ \mathrm{cm}^{-1}$と求まる.
-また, $\mathrm{Cu}$の密度$\rho=4.54\ \mathrm{g}/\mathrm{cm}^3$より\cite{金属の密度}, 質量吸収計数$\mu_m=34.74\ \mathrm{cm}^2/\mathrm{g}$と求まる.
+また, $\mathrm{Cu}$の密度$\rho=4.54\ \mathrm{g}/\mathrm{cm}^3$\cite{金属の密度}より, 質量吸収計数$\mu_m=34.74\ \mathrm{cm}^2/\mathrm{g}$と求まる.
 
 
 
@@ -605,7 +605,19 @@ $x=0$のときの計数値の平均値を$\overline{N}_{\beta 0}$とすると, �
 
 \subsection{$\beta$線の計数値の分布の観測}
 
-図4,5,6より, 計数管と線源の距離が近づくほど計数値の平均値$\overline{N}$は大きくなっていることがわかる.
+一般に, $\sqrt{\overline{N}}$が標準偏差$\sigma$に近いほど計数値の分布はポアソン分布に近いことが期待される.
+しかし今回の実験では, 測定$100$回における$\sqrt{\overline{N}}$と$\sigma$の差は
+\begin{equation}
+  \sqrt{\overline{N}} - \sigma = 1.82 - 1.81 = 0.01
+\end{equation}
+であるのに対し, 測定$300$回における差は
+\begin{equation}
+  \sqrt{\overline{N}} - \sigma = 1.82 - 1.69 = 0.13
+\end{equation}
+である.
+これより, 今回の実験では$\sqrt{\overline{N}}$が標準偏差$\sigma$に近いほど計数値の分布はポアソン分布に近いとは言い難い結果になった.
+
+次に, 図4,5,6より, 計数管と線源の距離が近づくほど計数値の平均値$\overline{N}$は大きくなっていることがわかる.
 そこで, 計数管との距離と, $\beta$線の計数値の平均値$\overline{N}$の間に, 具体的にどのような関係があるかを調べるために, 計数管との距離と, $\beta$線の計数値の平均値$\overline{N}$の関係を次の表にまとめる.
 
 \begin{table}[H]
